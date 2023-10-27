@@ -22,6 +22,16 @@ namespace Data_Set_Example
             //    GridView1.DataBind();
             //}
 
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Name");
+            dt.Columns.Add("Number");
+            dt.Rows.Add("yash", "2365479");
+            dt.Rows.Add("Ravi", "879027");
+            dt.Rows.Add("Miral", "56347");
+            dt.Rows.Add("karan", "34796");
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+
         }
     }
 }
